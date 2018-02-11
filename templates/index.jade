@@ -1,31 +1,11 @@
-
-extends layout
-
-block content
-  h2 #{locals._id} 
-  h3 #{locals.client_details.client_email} 
-  
-  include author
-  
-  each article in articles
-    article.article.intro
-      header
-        p.date
-          span= moment.utc(article.date).format('DD. MMMM YYYY')
-        h2
-          a(href=article.url)= article.title
-      section.content
-        if article.intro.length > 0
-          != typogr(article.intro).typogrify()
-        if article.hasMore
-          p.more
-            a(href=article.url) more
-
-block prepend footer
-  div.nav
-    if prevPage
-      a(href=prevPage.url) &laquo; Newer
-    else
-      a(href='/archive.html') &laquo; Archives
-    if nextPage
-      a(href=nextPage.url) Next page &raquo;
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title= locals._id
+    link(rel="stylesheet", href="main.css")
+  body
+    h1= locals.client_details.client_first_name + ' ' + locals.client_details.client_last_name
+    h2= locals.client_details.client_email
+    h3= locals.client_details.client_phone
+    

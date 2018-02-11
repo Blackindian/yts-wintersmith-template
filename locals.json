@@ -1,10 +1,10 @@
 {
-    "url": "http://localhost:8080",
-    "name": "The Wintersmith's blog",
-    "owner": "Someone",
-    "description": "Ramblings of an immor(t)al demigod",
-    "_id": "1234567890",
-    "client_details": {
-        "client_email": "mkfisher82@gmail.com"
+    "_id":"5a7e630ebbbf7365eef29c41",
+	"client_details": {
+		"_id":"5a7e636189a28a6619dbc7ce",
+		"client_first_name":"Nicole",
+		"client_last_name":"Sattler",
+		"client_email": "nfsattler@gmail.com",
+		"client_phone":"02040636902"
     }
- }
+}

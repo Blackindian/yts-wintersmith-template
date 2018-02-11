@@ -1,0 +1,14 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title= locals._id
+    link(rel="stylesheet", href="css/main.css")
+  body
+    h1 This is a different template 
+    h2= locals.client_details.client_first_name + ' ' + locals.client_details.client_last_name
+    h2= locals.client_details.client_email
+    h3= locals.client_details.client_phone
+    
+    script(type="text/javascript", src='js/main.js')
+    
