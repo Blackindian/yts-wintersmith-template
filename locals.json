@@ -1,0 +1,10 @@
+{
+    "url": "http://localhost:8080",
+    "name": "The Wintersmith's blog",
+    "owner": "Someone",
+    "description": "Ramblings of an immor(t)al demigod",
+    "_id": "1234567890",
+    "client_details": {
+        "client_email": "mkfisher82@gmail.com"
+    }
+ }
